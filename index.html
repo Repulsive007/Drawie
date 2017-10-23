@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+    <title>Drawie (Drawing App)</title>
+</head>
+
+<body>
+
+
+
+
+    <div id="upperdiv">
+        <i class="large material-icons" id="image" onclick="sideopen()">format_align_justify</i>
+        <h2 id="upperheader">DRAWIE</h2>
+
+
+
+        <div id="sidebar" class="top">
+            <br>
+            <i class="large material-icons" id="close" onclick="sideclose()">cancel</i>
+            <h2 id="uppertag">DRAWIE</h2>
+            <hr>
+            <button class="button" id="save" onclick="save()">SAVE</button>
+            <button class="button" id="clear" onclick="clearuo()">CLEAR</button>
+            <button class="button" id="erase" onclick="clearuo()">ERASE</button>
+            <hr>
+            <h3 class="text"> Pen-Depth:</h3>
+            <h3 class="text" id="counter">0</h3>
+            <input type="range" id="range" min="1" max="10" step="1" oninput="counter()">
+            <br>
+            <br>
+            <hr>
+            <input type="color" id="color">
+        </div>
+        <canvas id="canvas"></canvas>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="filesaver.js"></script>
+<script src="main.js"></script>
+
+</html>
